@@ -1,6 +1,10 @@
 import Database from "better-sqlite3";
+import path from 'path';
 
-const db = new Database("/home/ivane/work/kickJoke/data/jokes.db", { readonly: true });
+const __dirname = path.resolve();
+const dbPath = path.join(__dirname, "/data/jokes.db");
+
+const db = new Database(dbPath, { readonly: true });
 export default function getRandomJoke() {
     const row = db
     .prepare("SELECT text FROM jokes ORDER BY RANDOM() LIMIT 1")
