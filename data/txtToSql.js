@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const Database = require("better-sqlite3");
 
-const TXT_FILE = path.join(__dirname, "jokes_filtered.txt");
+const TXT_FILE = path.join(__dirname, "jokes_final_clean.txt");
 const DB_FILE = path.join(__dirname, "jokes.db");
 
 const db = new Database(DB_FILE, {
@@ -42,4 +42,3 @@ insertMany(jokes);
 
 console.log(`Inserted ${jokes.length} jokes into SQLite database.`);
 db.close();
-
