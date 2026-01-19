@@ -20,6 +20,6 @@
   "homepage": "https://github.com/ivan020/kickJoke#readme",
   "dependencies": {
     "@nekiro/kick-api": "^2.1.2",
-    "sqlite3": "^5.1.7"
+    "better-sqlite3": "^12.6.2"
   }
 }
