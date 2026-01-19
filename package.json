@@ -1,0 +1,25 @@
+{
+  "name": "kickjoke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan020/kickJoke.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ivan020/kickJoke/issues"
+  },
+  "homepage": "https://github.com/ivan020/kickJoke#readme",
+  "dependencies": {
+    "@nekiro/kick-api": "^2.1.2",
+    "sqlite3": "^5.1.7"
+  }
+}
