@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve",
-    "build": "webpack --mode production",
-    "server": "node server/server.js"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "webpack serve",
+      "build": "webpack --mode production",
+      "server": "node server/server.js",
+      "deploy": "gh-pages -d dist",
+      "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/ivan020/kickJoke/issues"
   },
-  "homepage": "https://github.com/ivan020/kickJoke#readme",
+  "homepage": "https://ivan020.github.io/kickJoke",
   "dependencies": {
     "better-sqlite3": "^12.6.2",
     "dotenv": "^17.2.3",
@@ -28,6 +30,7 @@
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1",
