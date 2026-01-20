@@ -1,3 +1,6 @@
+import "./style.css";
+
+
 async function appendJoke() {
   const res = await fetch("/api/joke");
   const data = await res.json();

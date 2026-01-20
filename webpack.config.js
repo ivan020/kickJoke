@@ -14,11 +14,19 @@ export default {
     clean: true
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"]
+      }
+    ]
+  },
+
   devServer: {
     static: "./dist",
     port: 3000,
     open: true,
-
     proxy: [
       {
         context: ["/api"],
