@@ -1,9 +1,11 @@
-import randomJoke from "./randomJoke.js";
-
-function appendJoke() {
-    const joke = randomJoke();
-    document.getElementById("joke").textContent = joke;
+async function appendJoke() {
+  const res = await fetch("/api/joke");
+  const data = await res.json();
+  document.getElementById("joke").textContent = data.joke;
 }
 
-document.addEventListener("DOMContentLoaded", appendJoke);
-document.getElementById("generate").addEventListener("click", appendJoke);
+appendJoke();
+
+document
+  .getElementById("generate")
+  .addEventListener("click", appendJoke);

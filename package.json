@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve",
+    "build": "webpack --mode production",
+    "server": "node server/server.js"  
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,12 @@
   "homepage": "https://github.com/ivan020/kickJoke#readme",
   "dependencies": {
     "better-sqlite3": "^12.6.2",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
   }
 }
