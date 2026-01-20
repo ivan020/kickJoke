@@ -28,7 +28,7 @@ const showChannelInfo = async (channelSlug, botClient) => {
 
 const main = async () => {
     const config = createConfig(CLIENT_ID, CLIENT_SECRET);
-    const channelInfo = await showChannelInfo("xqc", config);
+    const channelInfo = await showChannelInfo("maddyson", config);
 
     console.log(channelInfo);
 };
